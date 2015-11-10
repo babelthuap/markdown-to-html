@@ -5,7 +5,9 @@ html(lang="en")
     link(rel="stylesheet", href="/style.css")
   body
     h1 Convert Markdown to HTML
-    p by Nicholas Neumann-Chun
+    p: em
+      span by 
+      a(href="https://babelthuap.github.io/") Nicholas Neumann-Chun
     hr
     table
       tbody
@@ -15,7 +17,7 @@ html(lang="en")
           th See the Rendered HTML Here
         tr
           td
-            input(type="text" value="I am using __markdown__.")#md
+            textarea(type="text" rows="30" cols="47")#md I am using __markdown__.
           td
             button#convert Convert
           td

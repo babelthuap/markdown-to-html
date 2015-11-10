@@ -1,3 +1,9 @@
-td {
+td:nth-of-type(odd) {
   border: 1px solid black;
+}
+
+#rendered {
+  /* matches the size of the input box */
+  max-width: 304px;
+  max-height: 396px;
 }

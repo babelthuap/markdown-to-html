@@ -7,15 +7,13 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var marked = require('marked');
 
-
 var app = express();
 app.set('view engine', 'jade');
 
 
 
 // enable POST body parsing
-app.use(bodyParser.urlencoded({ extended: true })); // form data - for webpage
-// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // log in the console
 app.use(morgan('combined'));
@@ -33,7 +31,6 @@ app.get('/', function(req, res) {
 // receive markdown, convert it to HTML, respond with resulting HTML
 app.post('/markdown', function(req, res) {
   if (!req.body) return res.sendStatus(400);
-  console.log('POST REQUEST:', req);
   res.send( marked(req.body.string) );
 });
 
