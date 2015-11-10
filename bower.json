@@ -1,0 +1,21 @@
+{
+  "name": "md-to-html",
+  "description": "my first Heroku app",
+  "main": "app.js",
+  "authors": [
+    "Nicholas Neumann-Chun"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/babelthuap/markdown-to-html",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
