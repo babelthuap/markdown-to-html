@@ -3,7 +3,7 @@
 $(document).ready(() => {
 
   $('#convert').click(convert);
-  $('#md').on('keypress', debounce);
+  $('#md').on('keydown', debounce);
 
   function convert() {
     let md = $('#md').val();
@@ -21,7 +21,8 @@ $(document).ready(() => {
   function debounce() {
     $('#md').off();
     setTimeout(() => {
-      $('#md').on('keypress', debounce);
+      convert();
+      $('#md').on('keydown', debounce);
     }, 1000)
   }
 
