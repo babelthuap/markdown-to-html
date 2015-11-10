@@ -16,7 +16,7 @@ app.set('view engine', 'jade');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // log in the console
-app.use(morgan('combined'));
+app.use(morgan('dev'));
 
 // allow static pages to access the resources they need
 app.use(express.static(__dirname + '/public'));
