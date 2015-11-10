@@ -4,12 +4,13 @@ html(lang="en")
     title 'Markdown To HTML'
     link(rel="stylesheet", href="/style.css")
   body
-    h1 Convert Markdown to HTML
-    p: em
-      span by 
-      a(href="https://babelthuap.github.io/") Nicholas Neumann-Chun
+    .header
+      h1 Convert Markdown to HTML
+      p: em
+        span by 
+        a(href="https://babelthuap.github.io/") Nicholas Neumann-Chun
     hr
-    table
+    table#conversion
       tbody
         tr
           th Write Markdown Here
@@ -17,7 +18,7 @@ html(lang="en")
           th See the Rendered HTML Here
         tr
           td
-            textarea(type="text" rows="30" cols="47")#md I am using __markdown__.
+            textarea(type="text" rows="32" cols="64")#md I am using __markdown__.
           td
             button#convert Convert
           td

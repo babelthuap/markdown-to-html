@@ -1,9 +1,22 @@
+.header {
+  text-align: center;
+}
+
+#conversion {
+  margin: auto;
+}
+
 td:nth-of-type(odd) {
   border: 1px solid black;
 }
 
+#md {
+  font-family: monospace;
+}
+
 #rendered {
   /* matches the size of the input box */
-  max-width: 304px;
-  max-height: 396px;
+  width: 470px;
+  height: 486px;
+  overflow: scroll;
 }
