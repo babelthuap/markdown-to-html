@@ -21,7 +21,6 @@ $(document).ready(() => {
   function debounce() {
     $('#md').off();
     setTimeout(() => {
-      convert();
       $('#md').on('keypress', debounce);
     }, 1000)
   }
