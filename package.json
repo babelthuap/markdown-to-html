@@ -1,8 +1,11 @@
 {
   "name": "md-to-html",
   "version": "1.0.0",
-  "description": "by Nicholas Neumann-Chun",
+  "description": "my first Heroku app",
   "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
@@ -10,15 +13,11 @@
     "marked": "^0.3.5",
     "morgan": "^1.6.1"
   },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node app.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/babelthuap/markdown-to-html.git"
   },
-  "author": "",
+  "author": "Nicholas Neumann-Chun",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/babelthuap/markdown-to-html/issues"

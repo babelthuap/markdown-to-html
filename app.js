@@ -1,6 +1,6 @@
 'use strict';
 
-var PORT = app.get('port') || 3000;
+var PORT = process.env.PORT || 3000;
 
 var express = require('express');
 var morgan = require('morgan');
@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('combined'));
 
 // allow static pages to access the resources they need
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 
 
