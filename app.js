@@ -1,5 +1,7 @@
 'use strict';
 
+var PORT = 3000;
+
 var express = require('express');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
@@ -16,10 +18,18 @@ app.use(bodyParser.json());
 // log in the console
 app.use(morgan('combined'));
 
+// allow static pages to access the resources they need
+app.use(express.static('public'));
+
+
+
 // display the index page when a user accessess the server from a browser
 app.get('/', function(req, res) {
   res.render('index');
 });
 
 
-app.listen(3000);
+
+app.listen(PORT, function(){
+  console.log('listening on port %s', PORT);
+});
