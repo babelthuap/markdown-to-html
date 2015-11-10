@@ -5,6 +5,7 @@ var PORT = 3000;
 var express = require('express');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
+var marked = require('marked');
 
 
 var app = express();
@@ -33,7 +34,7 @@ app.get('/', function(req, res) {
 app.post('/markdown', function(req, res) {
   if (!req.body) return res.sendStatus(400);
   console.log('POST REQUEST:', req);
-  res.send('not converted yet: ' + req.body.string);
+  res.send( marked(req.body.string) );
 });
 
 

@@ -13,7 +13,8 @@ $(document).ready(() => {
   }
 
   function displayHTML(data) {
-    $('#rendered').text(data);
+    let html = $.parseHTML(data);
+    $('#rendered').empty().append(html);
   }
 
 });
