@@ -9,10 +9,11 @@
     "jade": "^1.11.0",
     "marked": "^0.3.5",
     "morgan": "^1.6.1"
+    ""
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

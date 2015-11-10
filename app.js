@@ -1,6 +1,6 @@
 'use strict';
 
-var PORT = 3000;
+var PORT = app.get('port') || 3000;
 
 var express = require('express');
 var morgan = require('morgan');
