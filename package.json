@@ -1,0 +1,27 @@
+{
+  "name": "md-to-html",
+  "version": "1.0.0",
+  "description": "by Nicholas Neumann-Chun",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "marked": "^0.3.5",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babelthuap/markdown-to-html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babelthuap/markdown-to-html/issues"
+  },
+  "homepage": "https://github.com/babelthuap/markdown-to-html#readme"
+}
